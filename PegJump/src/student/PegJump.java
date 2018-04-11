@@ -83,40 +83,50 @@ public class PegJump {
 			Jump j = jitr.next();
 
 			int from = j.getFrom();
-			int over = j.getOver();
-			int dest = j.getDest();
-			if (pegs[from] && pegs[over] && !pegs[dest]) {
-				// found a valid jump
-				jumpList.add(j);       // add to the result list
-				pegs[from] = false;    // do the jump
-				pegs[over] = false;
-				pegs[dest] = true;
-				jumpCnt++;
-				jumpCnt += doRecursiveJump(puzzle, jumpList, pegs);
-				if (done(pegs))
+			if (pegs[from])
+			{
+				int over = j.getOver();
+				if (pegs[over])
 				{
-					return jumpCnt;
-				}
-				else 
-				{
-					pegs[from] = true;
-					pegs[over] = true;
-					pegs[dest] = false;
-					jumpList.remove(jumpList.size() - 1);
+					int dest = j.getDest();
+					if (!pegs[dest])
+					{
+						jumpList.add(j);       // add to the result list
+						pegs[from] = false;    // do the jump
+						pegs[over] = false;
+						pegs[dest] = true;
+						jumpCnt++;
+						jumpCnt += doRecursiveJump(puzzle, jumpList, pegs);
+						if (done(pegs, puzzle))
+						{
+							return jumpCnt;
+						}
+						else 
+						{
+							pegs[from] = true;
+							pegs[over] = true;
+							pegs[dest] = false;
+							jumpList.remove(jumpList.size() - 1);
+						}
+					}
 				}
 			}
 		}
 		return jumpCnt;
 	}
 	
-	private static boolean done(boolean[] pegs)
+	private static boolean done(boolean[] pegs, PegJumpPuzzle puzzle)
 	{
 		int numTrue = 0;
 		for (int i = 0; i < pegs.length; i++)
 		{
 			if (pegs[i]) numTrue++;
 		}
-		return numTrue <= 1;
+		if (numTrue <= 1)
+		{
+			return pegs[puzzle.getStartHole()];
+		}
+		else return false;
 	}
 	
 }
