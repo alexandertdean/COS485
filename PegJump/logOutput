@@ -1,0 +1,172 @@
+%!PS-Adobe-3.0
+%%BeginProlog
+/imStr 0 def /imageSrc {currentfile /ASCII85Decode filter /RunLengthDecode filter  imStr readstring pop } def
+/BD {bind def} bind def
+/D {def} BD
+/C {curveto} BD
+/L {lineto} BD
+/M {moveto} BD
+/R {grestore} BD
+/G {gsave} BD
+/N {newpath} BD
+/P {closepath} BD
+/EC {eoclip} BD
+/WC {clip} BD
+/EF {eofill} BD
+/WF {fill} BD
+/SG {setgray} BD
+/SC {setrgbcolor} BD
+/ISOF {
+     dup findfont dup length 1 add dict begin {
+             1 index /FID eq {pop pop} {D} ifelse
+     } forall /Encoding ISOLatin1Encoding D
+     currentdict end definefont
+} BD
+/NZ {dup 1 lt {pop 1} if} BD
+/S {
+     moveto 1 index stringwidth pop NZ sub
+     1 index length 1 sub NZ div 0
+     3 2 roll ashow newpath} BD
+/FL [
+    /AvantGarde-Book ISOF
+    /AvantGarde-BookOblique ISOF
+    /AvantGarde-Demi ISOF
+    /AvantGarde-DemiOblique ISOF
+    /Bookman-Demi ISOF
+    /Bookman-DemiItalic ISOF
+    /Bookman-Light ISOF
+    /Bookman-LightItalic ISOF
+    /Courier ISOF
+    /Courier-Bold ISOF
+    /Courier-BoldOblique ISOF
+    /Courier-Oblique ISOF
+    /Helvetica ISOF
+    /Helvetica-Bold ISOF
+    /Helvetica-BoldOblique ISOF
+    /Helvetica-Narrow ISOF
+    /Helvetica-Narrow-Bold ISOF
+    /Helvetica-Narrow-BoldOblique ISOF
+    /Helvetica-Narrow-Oblique ISOF
+    /Helvetica-Oblique ISOF
+    /NewCenturySchlbk-Bold ISOF
+    /NewCenturySchlbk-BoldItalic ISOF
+    /NewCenturySchlbk-Italic ISOF
+    /NewCenturySchlbk-Roman ISOF
+    /Palatino-Bold ISOF
+    /Palatino-BoldItalic ISOF
+    /Palatino-Italic ISOF
+    /Palatino-Roman ISOF
+    /Symbol findfont
+    /Times-Bold ISOF
+    /Times-BoldItalic ISOF
+    /Times-Italic ISOF
+    /Times-Roman ISOF
+    /ZapfDingbats findfont
+    /ZapfChancery-MediumItalic ISOF
+] D
+/F {
+     FL exch get exch scalefont
+     [1 0 0 -1 0 0] makefont setfont} BD
+%%EndProlog
+%%BeginSetup
+<< /PageSize [612.0 783.0] /DeferredMediaSelection true /ImagingBBox null /ManualFeed false /NumCopies 1 >> setpagedevice 
+%%EndSetup
+%%Page: 1 1
+/pgSave save def
+783.0 0 exch translate 1 -1 scale[72 300 div 0 0 72 300 div 0 0]concat
+G
+[4.1666665 0.0 0.0 4.1666665 300.0 300.0] concat
+N
+0.0 0.0 M
+468.0 0.0 L
+468.0 639.0 L
+0.0 639.0 L
+0.0 0.0 L
+P
+WC
+6.0 13 F
+<616c6578616e646572202d20506567204a756d70> 72.479996 4.0 6.0 S
+6.0 13 F
+<546573742043617365> 32.88 4.0 17.569336 S
+N
+4.0 18.484 M
+4.0 18.484 L
+36.88 18.484 L
+37.38 18.484 L
+37.38 19.484 L
+36.88 19.484 L
+4.0 19.484 L
+3.5 19.484 L
+3.5 18.484 L
+P
+G
+WC
+WF
+R N
+6.0 13 F
+<4576616c756174696f6e> 36.0 50.56 17.569336 S
+N
+50.56 18.484 M
+50.56 18.484 L
+392.32 18.484 L
+392.82 18.484 L
+392.82 19.484 L
+392.32 19.484 L
+50.56 19.484 L
+50.06 19.484 L
+50.06 18.484 L
+P
+G
+WC
+WF
+R N
+6.0 13 F
+<457865637574696f6e2054696d65> 52.08 405.99985 17.569336 S
+N
+406.0 18.484 M
+406.0 18.484 L
+458.08 18.484 L
+458.58 18.484 L
+458.58 19.484 L
+458.08 19.484 L
+406.0 19.484 L
+405.5 19.484 L
+405.5 18.484 L
+P
+G
+WC
+WF
+R N
+6.0 12 F
+<74657374312e747874> 25.68 4.0 24.55371 S
+6.0 12 F
+<74657374322e747874> 25.68 4.0 31.538086 S
+6.0 12 F
+<74657374332e747874> 25.68 4.0 38.52246 S
+6.0 12 F
+<74657374342e747874> 25.68 4.0 45.506836 S
+6.0 12 F
+<74657374352e747874> 25.68 4.0 52.49121 S
+6.0 12 F
+<574f57206c6173742070656720696e207374617274696e6720686f6c653a20457374696d61746564206a756d7073203d20353038303332302c2041637475616c206a756d7073207365617263686564203d2033313135> 276.4799 50.56 24.55371 S
+6.0 12 F
+<574f57206c6173742070656720696e207374617274696e6720686f6c653a20457374696d61746564206a756d7073203d203630343830302c2041637475616c206a756d7073207365617263686564203d203531383231> 276.47986 50.56 31.538086 S
+6.0 12 F
+<574f57206c6173742070656720696e207374617274696e6720686f6c653a20457374696d61746564206a756d7073203d2033323430302c2041637475616c206a756d7073207365617263686564203d20323034323938> 276.47986 50.56 38.52246 S
+6.0 12 F
+<574f57206c6173742070656720696e207374617274696e6720686f6c653a20457374696d61746564206a756d7073203d203432363734363838303030302c2041637475616c206a756d7073207365617263686564203d20333335373434> 303.35986 50.56 45.506836 S
+6.0 12 F
+<574f57206c6173742070656720696e207374617274696e6720686f6c653a20457374696d61746564206a756d7073203d20313031393734343539303233333630303030302c2041637475616c206a756d7073207365617263686564203d20343837363933343337> 341.75986 50.56 52.49121 S
+6.0 12 F
+<302e3030313631207365636f6e6473> 51.359997 405.99985 24.55371 S
+6.0 12 F
+<302e30313936207365636f6e6473> 47.519997 405.99985 31.538086 S
+6.0 12 F
+<302e30373739207365636f6e6473> 47.519997 405.99985 38.52246 S
+6.0 12 F
+<302e313639207365636f6e6473> 43.68 405.99985 45.506836 S
+6.0 12 F
+<323930207365636f6e6473> 37.92 405.99985 52.49121 S
+pgSave restore
+showpage
+%%EOF

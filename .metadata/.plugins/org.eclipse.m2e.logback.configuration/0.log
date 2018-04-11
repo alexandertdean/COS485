@@ -52,3 +52,4 @@
 2018-04-11 11:49:45,196 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5783be64{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
 2018-04-11 11:49:45,196 [Stop Help Server] INFO  org.eclipse.jetty.server.session - Stopped scavenging
 2018-04-11 11:49:45,215 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@364a0551{/help,null,UNAVAILABLE}
+2018-04-11 14:13:24,267 [Worker-7] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
