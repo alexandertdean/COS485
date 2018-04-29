@@ -83,6 +83,7 @@ public class PegJump {
 			Jump j = jitr.next();
 
 			int from = j.getFrom();
+<<<<<<< HEAD
 			int over = j.getOver();
 			int dest = j.getDest();
 			if (pegs[from] && pegs[over] && !pegs[dest]) {
@@ -98,11 +99,34 @@ public class PegJump {
 					return jumpCnt;
 				}
 				else 
+=======
+			if (pegs[from])
+			{
+				int over = j.getOver();
+				if (pegs[over])
+>>>>>>> 9d0c6b229050a697a6a7d01fdb3e448accd935e1
 				{
-					pegs[from] = true;
-					pegs[over] = true;
-					pegs[dest] = false;
-					jumpList.remove(jumpList.size() - 1);
+					int dest = j.getDest();
+					if (!pegs[dest])
+					{
+						jumpList.add(j);       // add to the result list
+						pegs[from] = false;    // do the jump
+						pegs[over] = false;
+						pegs[dest] = true;
+						jumpCnt++;
+						jumpCnt += doRecursiveJump(puzzle, jumpList, pegs);
+						if (done(pegs, puzzle))
+						{
+							return jumpCnt;
+						}
+						else 
+						{
+							pegs[from] = true;
+							pegs[over] = true;
+							pegs[dest] = false;
+							jumpList.remove(jumpList.size() - 1);
+						}
+					}
 				}
 			}
 		}
