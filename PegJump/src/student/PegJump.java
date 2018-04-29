@@ -93,7 +93,7 @@ public class PegJump {
 				pegs[dest] = true;
 				jumpCnt++;
 				jumpCnt += doRecursiveJump(puzzle, jumpList, pegs);
-				if (done(pegs))
+				if (done(pegs, puzzle))
 				{
 					return jumpCnt;
 				}
@@ -109,14 +109,18 @@ public class PegJump {
 		return jumpCnt;
 	}
 	
-	private static boolean done(boolean[] pegs)
+	private static boolean done(boolean[] pegs, PegJumpPuzzle puzzle)
 	{
 		int numTrue = 0;
 		for (int i = 0; i < pegs.length; i++)
 		{
 			if (pegs[i]) numTrue++;
 		}
-		return numTrue <= 1;
+		if (numTrue <= 1)
+		{
+			return pegs[puzzle.getStartHole()];
+		}
+		else return false;
 	}
 	
 }
