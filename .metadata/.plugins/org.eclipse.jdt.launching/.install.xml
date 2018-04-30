@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-<<<<<<< HEAD
-<entry loc="/usr/lib/jvm/java-8-openjdk-amd64" stamp="1516679260000"/>
-<entry loc="C:\Program Files\Java\jre1.8.0_161" stamp="1521465491379"/>
-=======
-<entry loc="/usr/lib/jvm/java-8-openjdk-amd64" stamp="1523463689000"/>
->>>>>>> 9d0c6b229050a697a6a7d01fdb3e448accd935e1
+<entry loc="C:\Program Files\Java\jre1.8.0_161" stamp="1523235640945"/>
 </dirs>

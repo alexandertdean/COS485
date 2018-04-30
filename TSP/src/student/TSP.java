@@ -91,6 +91,7 @@ public class TSP
 
 	}
 	
+	// Recursive solution. Horrible run time, but will get A tour (though not optimal)
 	private static int recSolve(Graph g, Vertex v)
 	{
 		int length = 0;
